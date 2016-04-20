@@ -6,39 +6,82 @@
 	<link rel="stylesheet" href="bower_components/normalize-css/normalize.css">
 </head>
 <body>
-<section id="banner">
+<section id="banner" data-scroll-index="0">
 	<div class="wrapper">
 		<header>
-			<p id="logo">Anchieta Júnior</p>
+			<p id="logo"><a data-scroll-nav="0">Anchieta Júnior</a></p>
 			<nav>
-				<a href="#">Home</a>
-				<a href="#">Portfolio</a>
-				<a href="#">Services</a>
+				<a data-scroll-nav="1">Services</a>
+				<a data-scroll-nav="2">Portfolio</a>
+				<a data-scroll-nav="3">Contact</a>
 				<a href="#" class="button button_secondary button_small">Get in touch</a>
 			</nav>
 
 		</header>
 
 		<div class="content">
+			<div class="content-img">
+				
+			</div>
 			<h1 class="title">We create beatiful web sites</h1>
 			<h2 class="sub_title">That's it !</h2>
-			<div class="button_wrapper">
-				<a href="#" class="button button_highlight">Learn More</a>
-				<a href="#" class="button button_secondary">Play Video</a>
-			</div>
 		</div>
 
 	</div>
 </section>
 
-<section id="services"> 
+<section id="services" class="cf" data-scroll-index="1"> 
 	<div class="wrapper">
 		<div class="service">
-			
+			<h3>Front-end</h3>
+			<p>Think and make themes for sites, blogs and web apps.</p>
+			<a href="#" class="button button_highlight button_small">Learn More</a>
+		</div>
+
+		<div class="service middle">
+			<h3>Back-end</h3>
+			<p>Nice Web Apps and APIs using Ruby on Rails and blogs or
+			sites with Wordpress.</p>
+			<a href="#" class="button button_highlight button_small">Learn More</a>
+		</div>
+
+		<div class="service">
+			<h3>Mobile</h3>
+			<p>Loading... <br>This will happen soon, wait for it.</p>
+			<a href="#" class="button button_highlight button_small">Learn More</a>
 		</div>
 	</div>
 </section>
 
+<section id="past_work" data-scroll-index="2">
+	<div class="wrapper">
+		<h2 class="title">What i use?</h2>
+		<img src="images/techs.png" alt="Browsers" class="logos">
+		<ul id="slider">
+			<li><img src="images/rails.jpg" alt="Mini Curso Rails"></li>
+			<li><img src="images/estoque.jpg" alt="Estoque Sistemas"></li>
+			<li><img src="images/novaalianca.jpg" alt="Nova Aliança Paulo afonso"></li>
+		</ul>
+	</div>
+</section>
+
+<section id="contact" data-scroll-index="3">
+	<div class="wrapper">
+		<h2 class="title">Get in touch</h2>
+		<p class="sub_title">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem incidunt illum quasi eveniet aperiam aut ipsum.
+		</p>
+		<a href="#" class="button button_highlight button_larg">Contact Us</a>
+	</div>
+</section>
+
+<footer>
+	<p class="copyright">
+		&copy; 2016 <a href="#">Anchieta Jr.</a>
+	</p>
+</footer>
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="js/scrollIt.min.js"></script>
 <script src="js/app.min.js"></script>
 </body>
 </html>

@@ -73,6 +73,10 @@ a:focus {
     font-weight: 700;
 }
 
+.page-scroll {
+    text-shadow: 2px 2px 2px #000;   
+}
+
 .navbar-custom .navbar-brand:focus {
     outline: 0;
 }
@@ -161,7 +165,9 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
+    font-family: 'Oswald', sans-serif;
     font-size: 40px;
+    text-shadow: 1px 1px 30px #000;
 }
 
 .intro .intro-body .intro-text {
